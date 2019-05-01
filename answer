@@ -1,0 +1,20 @@
+class Solution(object):
+    def plusOne(self, digits):
+        """
+        :type digits: List[int]
+        :rtype: List[int]
+        """
+        s = ""
+        new_list = []
+        for number in digits:
+            s = s + str(number)
+        nums = int(s)
+        nums += 1
+        nums = str(nums)
+        for letter in nums:
+            new_list.append(letter)
+        return new_list
+        
+        
+        #Runtime: 24 ms, faster than 49.39% of Python online submissions for Plus One.
+#Memory Usage: 11.7 MB, less than 5.30% of Python online submissions for Plus One.
